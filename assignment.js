@@ -44,8 +44,8 @@ function megaFriend(friend) {
     // Parameter array of friends
     // return largest name
     let largestFriend = friend[0];
-    for(index = 0 ; index < friend.length ; index++){
-        if( largestFriend.length < friend[index].length ){
+    for (index = 0; index < friend.length; index++) {
+        if (largestFriend.length < friend[index].length) {
             largestFriend = friend[index];
         }
     }
@@ -66,6 +66,6 @@ const nightStay = 25;
 const hotelTotalCost = hotelCost(nightStay);
 console.log('Total Hotel Price:', '$ ' + hotelTotalCost);
 
-const friendList = [ 'tom' , 'jane' , 'biden' , 'james' , 'jennifer' ];
-const friendMax = megaFriend( friendList );
-console.log( 'Largest name:' , friendMax );
+const friendList = ['tom', 'jane', 'biden', 'james', 'jennifer'];
+const friendMax = megaFriend(friendList);
+console.log('Largest name:', friendMax);
